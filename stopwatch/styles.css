@@ -1,0 +1,108 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: cornflowerblue;
+  /* align-content: center; */
+}
+h1{
+    text-align: center;
+}
+h1:hover {
+  animation: rotate 1s linear;
+  overflow-x: hidden;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* h1:hover{
+  
+    /* transform-style: preserve-3d; */
+    /* transform: scale(1.5);
+    letter-spacing: 10px;
+    transform: rotateX(360deg);
+    transition: 0.8s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; */
+ /* }  */
+
+@media screen {
+}
+.container {
+  margin: 50px 20px;
+  padding: 20px 0;
+  border-bottom: 2px solid black;
+  background-color: #ffff;
+  width: 40%;
+  min-width: 500px;
+  position: absolute;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  text-align: center;
+  align-self: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.timerDisplay {
+  position: relative;
+  width: 92%;
+  background: #ffffff;
+  left: 4%;
+  padding: 40px 0;
+  font-family: "Roboto mono", monospace;
+  color: #0381bb;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+}
+.buttons {
+  font-size: 80px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  width: 90%;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button {
+  width: 120px;
+  height: 45px;
+  background-color: #205e94;
+  color: #ffffff;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.buttons button:hover{
+  color: #205e94;
+  background-color: black;
+}
+.buttons button:nth-last-child(2) {
+  background-color: #d23332;
+}
+.buttons button:nth-last-child(1) {
+  background-color: #20b380;
+}
+.buttons button:nth-last-child(2):hover{
+  color: red;
+  background-color: black;
+}
+.buttons button:nth-last-child(1):hover {
+  color: #20b380;
+  background-color: black;
+}
+.timerDisplay:hover{
+  transform: scale(1.2);
+}
