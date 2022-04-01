@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="local.js"></script>
+</head>
+
+<body>
+    
+    <p class="site-title"> Welcome to CodeSchool </p>
+    <p>Let's start by filling the form below</p>
+    <table>
+        <tr>
+            <td>
+                <p>Name :</p>
+            </td>
+            <td><input id="name" type="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Email :</p>
+            </td>
+            <td><input id="email" type="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Contact : </p>
+            </td>
+            <td><input id="contact" type="number"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Nationality : </p>
+            </td>
+            <td><select id="nationality" type="text">
+                <option>INDIAN</option>
+                <option>NRI</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Gender :</p>
+            </td>
+            <td><input id="male" type="radio" name="info" value="Male">
+                <label>Male</label>
+                <input id="female"type="radio" name="info" value="Female">
+                <label>Female</label>
+                <input id="unknown" type="radio" name="info" value="Unknown">
+                <label>Do not wish to disclose</label>
+            </td>
+        </tr>
+
+    </table>
+    <button onclick="submit()" id="btn">submit</button>
+    <table  class="result">
+        <tr>
+            <td id="res_name"></td>
+            <td id="d11"></td>
+        </tr>
+        <tr>
+            <td id="res_email"></td>
+            <td id="d21"></td>
+        </tr>
+        <tr>
+            <td id="res_contact"></td>
+            <td id="d31"></td>
+        </tr>
+        <tr>
+            <td id="res_nationality"></td>
+            <td id="d41"></td>
+        </tr>
+        <tr>
+            <td id="res_gender"></td>
+            <td id="d51"></td>
+        </tr>
+    </table>
+
+</body>
+</html>

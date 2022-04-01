@@ -1,0 +1,50 @@
+@media only screen and (min-width: 1024px) {
+    .site-title {
+        font-size: 50px;
+        color: green;
+    }
+    /* #name{
+        color: navy;
+        font-size: 30px;
+} */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .site-title {
+        font-size: 40px;
+        color: blue;
+    }
+    /* #name{
+    color: rgb(0,128,0);
+    font-size: 20px;
+} */
+body{
+    background-color: rgb(0,206,209);
+}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .site-title {
+        font-size: 30px;
+        color: red;
+    }
+    /* #name{
+    color: yellow;
+
+} */
+p,label{
+    color: white;
+}
+body{
+    background-color: black;
+}
+}
+#btn{
+    /* align-items: center; */
+    margin: 2rem 6rem;
+    margin-left: 80px;
+}
+.result{
+    margin: 50px 40px;
+    border:1px solid;
+}
